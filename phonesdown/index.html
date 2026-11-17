@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phones Down: Couples</title>
+<meta name="description" content="Pause the apps that pull you away from each other. Your partner holds the key: when you want more time, you ask them. For iPhone.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F3EC; --ink: #171612; --muted: #66625A; --card: #FFFFFF;
+    --accent: #CDF25C; --accent-ink: #171612; --line: #DDD9CC; --partner: #D8CEFF; --partner-ink: #1F1740;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131311; --ink: #F3F1EA; --muted: #A9A69C; --card: #1E1E1B;
+      --accent: #C3E65A; --accent-ink: #171612; --line: #393934; --partner: #B9ABF5; --partner-ink: #1B1438;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #131311; --ink: #F3F1EA; --muted: #A9A69C; --card: #1E1E1B;
+    --accent: #C3E65A; --accent-ink: #171612; --line: #393934; --partner: #B9ABF5; --partner-ink: #1B1438;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.55;
+  }
+  h1, h2, h3, header span { font-family: "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: -0.02em; }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px 48px; }
+  header { display: flex; align-items: center; gap: 12px; padding: 20px 0; }
+  header img { width: 48px; height: 48px; border-radius: 12px; }
+  header span { font-size: 22px; font-weight: 800; }
+  .hero { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: center; padding: 16px 0 32px; }
+  @media (min-width: 760px) { .hero { grid-template-columns: 1fr 1.1fr; } }
+  .hero h1 { font-size: clamp(36px, 6.5vw, 58px); line-height: 1.02; margin: 0 0 14px; font-weight: 800; }
+  .hero p { font-size: 19px; color: var(--muted); margin: 0 0 22px; }
+  .hero img { width: 100%; border-radius: 28px; display: block; }
+  .badges { display: flex; flex-wrap: wrap; gap: 10px; }
+  .badge {
+    display: inline-block; padding: 12px 20px; border-radius: 999px; text-decoration: none;
+    background: var(--accent); color: var(--accent-ink); font-weight: 700;
+  }
+  .badge.soon { background: var(--card); color: var(--muted); border: 2px solid var(--line); }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .card { background: var(--card); border-radius: 24px; padding: 20px; border: 2px solid var(--line); }
+  .card.key { background: var(--partner); color: var(--partner-ink); border-color: transparent; }
+  .card.key p { color: var(--partner-ink); }
+  .card h3 { margin: 0 0 6px; font-size: 20px; font-weight: 800; }
+  .card p { margin: 0; color: var(--muted); }
+  .card a, footer a { color: var(--ink); }
+  h2 { font-size: 30px; font-weight: 800; margin: 44px 0 16px; }
+  footer { border-top: 2px solid var(--line); margin-top: 48px; padding-top: 20px; color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <span>Phones Down</span>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Be with them, not with your feed.</h1>
+      <p>Phones Down pauses the apps that pull you away from each other. Your partner holds the key: when you want more time, you ask them, and they say yes or not now.</p>
+      <div class="badges">
+        <!-- Thay bằng link App Store khi app đã được duyệt. -->
+        <span class="badge soon">Coming soon to the App Store</span>
+      </div>
+    </div>
+    <img src="hero.jpg" alt="Two iPhone screens from Phones Down: the welcome screen, and the Today screen showing apps paused with an Ask my partner button">
+  </section>
+
+  <h2>How it works</h2>
+  <div class="grid">
+    <div class="card"><h3>Pick your apps</h3><p>Choose the apps that eat your evenings. Only you see the list, and it never leaves your iPhone.</p></div>
+    <div class="card"><h3>Set your hours</h3><p>Pause them on a schedule, like dinner to bedtime, or after a daily time limit.</p></div>
+    <div class="card key"><h3>Your partner holds the key</h3><p>Need 15 minutes early? Ask your partner. They get a notification and decide.</p></div>
+    <div class="card"><h3>Honest by design</h3><p>If you switch off Screen Time access, your partner is told. No quiet workarounds.</p></div>
+  </div>
+
+  <h2>Fair and private</h2>
+  <div class="grid">
+    <div class="card"><h3>No guilt</h3><p>No streaks to break and no relationship scores. Just this week compared with last week.</p></div>
+    <div class="card"><h3>Your apps stay yours</h3><p>Your partner never sees which apps you pause or how long you use them. See our <a href="privacy.html">privacy policy</a>.</p></div>
+    <div class="card"><h3>Honest pricing</h3><p>Free plan for one group of up to 3 apps. Pro is $2.99 a month or $19.99 a year after a 7-day free trial, with a reminder 48 hours before every charge.</p></div>
+    <div class="card"><h3>No ads, no tracking</h3><p>Nothing is sold, shared for advertising, or tracked across other apps.</p></div>
+  </div>
+
+  <h2 id="support">Support</h2>
+  <div class="grid">
+    <div class="card"><h3>Cancel a subscription</h3><p>On your iPhone, open Settings → your name → Subscriptions → Phones Down. Or in the app: Settings → Manage subscription.</p></div>
+    <div class="card"><h3>Ask for a refund</h3><p>Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, or in the app: Settings → Request a refund.</p></div>
+    <div class="card"><h3>Remove your partner</h3><p>In the app, open Settings and tap Partner. They are notified. The person holding the key can step down the same way.</p></div>
+    <div class="card"><h3>Delete your account</h3><p>Settings → Delete account removes your account and partner connections. It doesn't cancel an App Store subscription.</p></div>
+    <div class="card"><h3>Apps aren't being paused?</h3><p>Phones Down needs Screen Time access on an iPhone with iOS 16 or later. Check Settings → Screen Time, then open the app again.</p></div>
+    <div class="card"><h3>Still stuck?</h3><p>Email us at <a href="mailto:htquandev2026@gmail.com">htquandev2026@gmail.com</a>. We read every message.</p></div>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · Contact: <a href="mailto:htquandev2026@gmail.com">htquandev2026@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
